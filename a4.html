@@ -21,15 +21,24 @@
             a2 = parseInt(t2.value)
             if(a1>a2)
             {
-                b1.value = "大於"
+                //b1.value = "大於"
+                document.getElementById("p1").innerHTML = t1.value + "大於" + t2.value
+                document.getElementById("p1").style.color = "blue"
+                document.getElementById("p1").style.fontSize = "30px"
             }
             else if(a1==a2)
             {
-                b1.value = "等於"
+                //b1.value = "等於"
+                document.getElementById("p1").innerHTML = t1.value + "等於" + t2.value
+                document.getElementById("p1").style.color = "blue"
+                document.getElementById("p1").style.fontSize = "30px"
             }
             else
             {
-                b1.value = "小於"
+                //b1.value = "小於"
+                document.getElementById("p1").innerHTML = t1.value + "小於" + t2.value
+                document.getElementById("p1").style.color = "blue"
+                document.getElementById("p1").style.fontSize = "30px"
             }
         }
     </script>
@@ -80,7 +89,9 @@
             <input class="red center" id="t1" type="text" value="3" size="5"/>
             <input class="red" id="b1" onclick="show()" type="button" value="比較"/>
             <input class="red center" id="t2" type="text" value="5" size="5"/>
-            
+            <p id="p1">
+
+            </p>
 
 
           <p>This standards compliant, simple, fixed width website template is released as an 'open source' design (under the Creative Commons Attribution 3.0 Licence), which means that you are free to download and use it for anything you want (including modifying and amending it). If you would like to remove the 'website template by ARaynorDesign' link from the footer of a template / website then that is OK, providing you make a small donation via the website. I do not specify an amount, just what you think the design is worth.</p>
